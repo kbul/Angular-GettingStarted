@@ -1,6 +1,7 @@
 <div class="card">
     <div class="card-header">
-        Product List
+        <!-- Product List -->
+        {{pageTitle}}
     </div>
 
     <div class="card-body">
@@ -19,11 +20,11 @@
     </div>
 
     <div class="table-responsive">
-        <table class="table">
+        <table class="table" *ngIf='products.length'>
             <thead>
                 <tr>
                     <th>
-                        <button class="btn btn-primary">
+                        <button class='btn btn-primary'>
                             Show image
                         </button>
                     </th>
